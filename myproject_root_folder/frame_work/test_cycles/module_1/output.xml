@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230904 12:43:16.902" rpa="false" schemaversion="4">
+<suite id="s1" name="Login Testcase1" source="C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\test_cycles\module_1\login_testcase1.robot">
+<test id="s1-t1" name="TestCasse For Login" line="7">
+<try>
+<branch type="TRY">
+<kw name="Open Login Page">
+<msg timestamp="20230904 12:43:17.137" level="FAIL">No keyword with name 'Open Login Page' found.</msg>
+<status status="FAIL" starttime="20230904 12:43:17.137" endtime="20230904 12:43:17.137"/>
+</kw>
+<kw name="Maximize Browser URL">
+<status status="NOT RUN" starttime="20230904 12:43:17.137" endtime="20230904 12:43:17.137"/>
+</kw>
+<kw name="Sigin Information">
+<status status="NOT RUN" starttime="20230904 12:43:17.137" endtime="20230904 12:43:17.137"/>
+</kw>
+<kw name="Close Browser URL">
+<status status="NOT RUN" starttime="20230904 12:43:17.137" endtime="20230904 12:43:17.137"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Login Successfully !!!!!!!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230904 12:43:17.137" endtime="20230904 12:43:17.137"/>
+</kw>
+<status status="FAIL" starttime="20230904 12:43:17.137" endtime="20230904 12:43:17.137"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Login Fail.......</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230904 12:43:17.137" endtime="20230904 12:43:17.137"/>
+</kw>
+<status status="PASS" starttime="20230904 12:43:17.137" endtime="20230904 12:43:17.137"/>
+</branch>
+<status status="PASS" starttime="20230904 12:43:17.137" endtime="20230904 12:43:17.137"/>
+</try>
+<status status="PASS" starttime="20230904 12:43:17.137" endtime="20230904 12:43:17.137"/>
+</test>
+<status status="PASS" starttime="20230904 12:43:16.902" endtime="20230904 12:43:17.154"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login Testcase1">Login Testcase1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230904 12:43:17.122" level="ERROR">Error in file 'C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\test_cycles\module_1\login_testcase1.robot' on line 3: Resource file 'Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\resources\page_objects\login_po.robot' does not exist.</msg>
+<msg timestamp="20230904 12:43:17.137" level="ERROR">Error in file 'C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\test_cycles\module_1\login_testcase1.robot' on line 4: Resource file 'Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\resources\keywords\common_keywords.robot' does not exist.</msg>
+</errors>
+</robot>

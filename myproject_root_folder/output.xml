@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.3 on win32)" generated="20230901 16:43:48.572" rpa="false" schemaversion="4">
+<suite id="s1" name="Myproject Root Folder" source="C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder">
+<suite id="s1-s1" name="Frame Work" source="C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work">
+<suite id="s1-s1-s1" name="Test Cycles" source="C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\test_cycles">
+<suite id="s1-s1-s1-s1" name="Module 1" source="C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\test_cycles\module_1">
+<suite id="s1-s1-s1-s1-s1" name="Testcase1" source="C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\test_cycles\module_1\testcase1.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="TestCasse Registration" line="7">
+<kw name="Open Registration Page" library="login_po">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.guru99.com/test/newtours/register.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230901 16:43:48.906" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/register.php'.</msg>
+<msg timestamp="20230901 16:43:48.938" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230901 16:43:48.938" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20230901 16:43:48.906" endtime="20230901 16:43:49.016"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230901 16:43:49.016" endtime="20230901 16:43:49.016"/>
+</kw>
+<status status="FAIL" starttime="20230901 16:43:48.906" endtime="20230901 16:43:49.016"/>
+</kw>
+<kw name="Register with Valid Information" library="common_keywords">
+<status status="NOT RUN" starttime="20230901 16:43:49.016" endtime="20230901 16:43:49.016"/>
+</kw>
+<kw name="Close Registration Page" library="login_po">
+<status status="NOT RUN" starttime="20230901 16:43:49.016" endtime="20230901 16:43:49.016"/>
+</kw>
+<status status="FAIL" starttime="20230901 16:43:48.906" endtime="20230901 16:43:49.016">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<status status="FAIL" starttime="20230901 16:43:48.604" endtime="20230901 16:43:49.016"/>
+</suite>
+<status status="FAIL" starttime="20230901 16:43:48.604" endtime="20230901 16:43:49.016"/>
+</suite>
+<status status="FAIL" starttime="20230901 16:43:48.588" endtime="20230901 16:43:49.016"/>
+</suite>
+<status status="FAIL" starttime="20230901 16:43:48.588" endtime="20230901 16:43:49.016"/>
+</suite>
+<status status="FAIL" starttime="20230901 16:43:48.572" endtime="20230901 16:43:49.016"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Myproject Root Folder">Myproject Root Folder</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Frame Work">Myproject Root Folder.Frame Work</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Test Cycles">Myproject Root Folder.Frame Work.Test Cycles</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Module 1">Myproject Root Folder.Frame Work.Test Cycles.Module 1</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="Testcase1">Myproject Root Folder.Frame Work.Test Cycles.Module 1.Testcase1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230901 16:43:48.906" level="ERROR">Error in file 'C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\resources\keywords\common_keywords.robot' on line 3: Resource file 'Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\resources\variables\common_variables.robot' does not exist.</msg>
+</errors>
+</robot>
