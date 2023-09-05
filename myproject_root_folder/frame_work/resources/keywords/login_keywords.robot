@@ -1,13 +1,16 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    Robot_Frame_work/rampup_task_robot/myproject_root_folder/frame_work/resources/variables/login_variables.robot
-Resource    Robot_Frame_work/rampup_task_robot/myproject_root_folder/frame_work/resources/variables/common_variables.robot
-Resource    Robot_Frame_work/rampup_task_robot/myproject_root_folder/frame_work/resources/page_objects/login_po.robot
+
+
+Resource    ../page_objects/login_po.robot
+Resource    ../variables/common_variables.robot
+Resource    ../variables/login_variables.robot
 
 *** Keywords ***
 
 Open Login Page
     Open Browser        ${login_URL_1}    ${BROWSER}
+
 #    Maximize Browser Window
 #    Sleep    2
 
@@ -16,6 +19,7 @@ Sigin Information
     Input Text      ${txt_LoginUserName}      ${login_ValidUsername}
     Input Text      ${txt_LoginUserPassword}      ${login_ValidPassword}
     Click Button    ${txt_btn_submit}
+
 
 
 Open Second Login Page

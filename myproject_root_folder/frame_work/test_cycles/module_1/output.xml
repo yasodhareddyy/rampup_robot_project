@@ -1,42 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230905 10:46:45.532" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230905 16:25:25.853" rpa="false" schemaversion="4">
 <suite id="s1" name="Login Testcase1" source="C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\test_cycles\module_1\login_testcase1.robot">
 <test id="s1-t1" name="TestCasse For Login" line="7">
 <try>
 <branch type="TRY">
-<kw name="Open Login Page">
-<msg timestamp="20230905 10:46:45.787" level="FAIL">No keyword with name 'Open Login Page' found.</msg>
-<status status="FAIL" starttime="20230905 10:46:45.787" endtime="20230905 10:46:45.787"/>
+<kw name="Open Login Page" library="login_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${login_URL_1}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 16:25:26.086" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/login.php'.</msg>
+<status status="PASS" starttime="20230905 16:25:26.086" endtime="20230905 16:25:30.629"/>
 </kw>
-<kw name="Maximize Browser URL">
-<status status="NOT RUN" starttime="20230905 10:46:45.787" endtime="20230905 10:46:45.787"/>
+<status status="PASS" starttime="20230905 16:25:26.086" endtime="20230905 16:25:30.629"/>
 </kw>
-<kw name="Sigin Information">
-<status status="NOT RUN" starttime="20230905 10:46:45.787" endtime="20230905 10:46:45.787"/>
+<kw name="Maximize Browser URL" library="common_keywords">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230905 16:25:30.629" endtime="20230905 16:25:30.782"/>
 </kw>
-<kw name="Close Browser URL">
-<status status="NOT RUN" starttime="20230905 10:46:45.787" endtime="20230905 10:46:45.787"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 16:25:32.782" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230905 16:25:30.782" endtime="20230905 16:25:32.782"/>
+</kw>
+<status status="PASS" starttime="20230905 16:25:30.629" endtime="20230905 16:25:32.782"/>
+</kw>
+<kw name="Sigin Information" library="login_keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_LoginUserName}</arg>
+<arg>${login_ValidUsername}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 16:25:32.782" level="INFO">Typing text 'yasodhareddy432@gmail.com' into text field 'name:userName'.</msg>
+<status status="PASS" starttime="20230905 16:25:32.782" endtime="20230905 16:25:32.935"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_LoginUserPassword}</arg>
+<arg>${login_ValidPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 16:25:32.935" level="INFO">Typing text 'yasodha' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230905 16:25:32.935" endtime="20230905 16:25:33.015"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${txt_btn_submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230905 16:25:33.015" level="INFO">Clicking button 'xpath://input[@name='submit']'.</msg>
+<status status="PASS" starttime="20230905 16:25:33.015" endtime="20230905 16:25:34.356"/>
+</kw>
+<status status="PASS" starttime="20230905 16:25:32.782" endtime="20230905 16:25:34.356"/>
+</kw>
+<kw name="Close Browser URL" library="common_keywords">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230905 16:25:34.356" endtime="20230905 16:25:36.535"/>
+</kw>
+<status status="PASS" starttime="20230905 16:25:34.356" endtime="20230905 16:25:36.536"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Login Successfully !!!!!!!</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20230905 10:46:45.787" endtime="20230905 10:46:45.787"/>
+<status status="PASS" starttime="20230905 16:25:36.536" endtime="20230905 16:25:36.536"/>
 </kw>
-<status status="FAIL" starttime="20230905 10:46:45.787" endtime="20230905 10:46:45.787"/>
+<status status="PASS" starttime="20230905 16:25:26.086" endtime="20230905 16:25:36.536"/>
 </branch>
 <branch type="EXCEPT">
 <kw name="Log To Console" library="BuiltIn">
 <arg>Login Fail.......</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230905 10:46:45.787" endtime="20230905 10:46:45.787"/>
+<status status="NOT RUN" starttime="20230905 16:25:36.536" endtime="20230905 16:25:36.536"/>
 </kw>
-<status status="PASS" starttime="20230905 10:46:45.787" endtime="20230905 10:46:45.787"/>
+<status status="NOT RUN" starttime="20230905 16:25:36.536" endtime="20230905 16:25:36.536"/>
 </branch>
-<status status="PASS" starttime="20230905 10:46:45.787" endtime="20230905 10:46:45.787"/>
+<status status="PASS" starttime="20230905 16:25:26.086" endtime="20230905 16:25:36.536"/>
 </try>
-<status status="PASS" starttime="20230905 10:46:45.787" endtime="20230905 10:46:45.787"/>
+<status status="PASS" starttime="20230905 16:25:26.086" endtime="20230905 16:25:36.536"/>
 </test>
-<status status="PASS" starttime="20230905 10:46:45.532" endtime="20230905 10:46:45.787"/>
+<status status="PASS" starttime="20230905 16:25:25.853" endtime="20230905 16:25:36.536"/>
 </suite>
 <statistics>
 <total>
@@ -49,7 +89,5 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230905 10:46:45.782" level="ERROR">Error in file 'C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\test_cycles\module_1\login_testcase1.robot' on line 3: Resource file 'Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\resources\page_objects\login_po.robot' does not exist.</msg>
-<msg timestamp="20230905 10:46:45.782" level="ERROR">Error in file 'C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\test_cycles\module_1\login_testcase1.robot' on line 4: Resource file 'Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\resources\keywords\common_keywords.robot' does not exist.</msg>
 </errors>
 </robot>

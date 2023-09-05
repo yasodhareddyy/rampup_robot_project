@@ -1,8 +1,3 @@
-#*** Settings ***
-#Library    SeleniumLibrary
-#Resource    Robot_Frame_work/rampup_task_robot/myproject_root_folder/frame_work/resources/variables/registration_variables.robot
-#Resource    Robot_Frame_work/rampup_task_robot/myproject_root_folder/frame_work/resources/variables/common_variables.robot
-
 *** Variables ***
 ${txt_regFirstName}     name:firstName
 ${txt_regLastName}      name:lastName
