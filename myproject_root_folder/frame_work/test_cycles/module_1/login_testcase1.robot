@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    Robot_Frame_work/rampup_task_robot/myproject_root_folder/frame_work/resources/page_objects/login_po.robot
 Resource    Robot_Frame_work/rampup_task_robot/myproject_root_folder/frame_work/resources/keywords/common_keywords.robot
+Resource    Robot_Frame_work/rampup_task_robot/myproject_root_folder/frame_work/resources/keywords/login_keywords.robot
 
 *** Test Cases ***
 TestCasse For Login
