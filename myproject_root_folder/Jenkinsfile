@@ -32,7 +32,7 @@ pipeline {
 //                 }
                 dir('C:\\Users\\YasodhaS-3242\\PycharmProjects\\PythonProject\\Robot_Frame_work\\rampup_task_robot\\myproject_root_folder\\frame_work\\test_cycles\\hr_os_module_3') {
                     // Run Robot Framework tests for login module 2
-                    bat 'login_hr_os_testcase.robot'
+                    bat 'robot login_hr_os_testcase.robot'
 
 
                 }
