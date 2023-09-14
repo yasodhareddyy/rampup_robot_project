@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230905 17:34:18.593" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230914 10:51:24.092" rpa="false" schemaversion="4">
 <suite id="s1" name="Login Testcase1" source="C:\Users\YasodhaS-3242\PycharmProjects\PythonProject\Robot_Frame_work\rampup_task_robot\myproject_root_folder\frame_work\test_cycles\module_1\login_testcase1.robot">
 <test id="s1-t1" name="TestCasse For Login" line="7">
 <try>
@@ -9,74 +9,74 @@
 <arg>${login_URL_1}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230905 17:34:18.809" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/login.php'.</msg>
-<status status="PASS" starttime="20230905 17:34:18.809" endtime="20230905 17:34:24.205"/>
+<msg timestamp="20230914 10:51:24.484" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/login.php'.</msg>
+<status status="PASS" starttime="20230914 10:51:24.484" endtime="20230914 10:51:30.479"/>
 </kw>
-<status status="PASS" starttime="20230905 17:34:18.809" endtime="20230905 17:34:24.205"/>
+<status status="PASS" starttime="20230914 10:51:24.484" endtime="20230914 10:51:30.479"/>
 </kw>
 <kw name="Maximize Browser URL" library="common_keywords">
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230905 17:34:24.205" endtime="20230905 17:34:24.349"/>
+<status status="PASS" starttime="20230914 10:51:30.479" endtime="20230914 10:51:30.614"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
+<arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230905 17:34:26.349" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230905 17:34:24.349" endtime="20230905 17:34:26.349"/>
+<msg timestamp="20230914 10:51:33.616" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230914 10:51:30.615" endtime="20230914 10:51:33.616"/>
 </kw>
-<status status="PASS" starttime="20230905 17:34:24.205" endtime="20230905 17:34:26.349"/>
+<status status="PASS" starttime="20230914 10:51:30.479" endtime="20230914 10:51:33.616"/>
 </kw>
 <kw name="Sigin Information" library="login_keywords">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_LoginUserName}</arg>
 <arg>${login_ValidUsername}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230905 17:34:26.349" level="INFO">Typing text 'yasodhareddy432@gmail.com' into text field 'name:userName'.</msg>
-<status status="PASS" starttime="20230905 17:34:26.349" endtime="20230905 17:34:26.504"/>
+<msg timestamp="20230914 10:51:33.618" level="INFO">Typing text 'yasodhareddy432@gmail.com' into text field 'name:userName'.</msg>
+<status status="PASS" starttime="20230914 10:51:33.616" endtime="20230914 10:51:33.794"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_LoginUserPassword}</arg>
 <arg>${login_ValidPassword}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230905 17:34:26.505" level="INFO">Typing text 'yasodha' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230905 17:34:26.505" endtime="20230905 17:34:26.584"/>
+<msg timestamp="20230914 10:51:33.794" level="INFO">Typing text 'yasodha' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230914 10:51:33.794" endtime="20230914 10:51:33.884"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${txt_btn_submit}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230905 17:34:26.584" level="INFO">Clicking button 'xpath://input[@name='submit']'.</msg>
-<status status="PASS" starttime="20230905 17:34:26.584" endtime="20230905 17:34:28.261"/>
+<msg timestamp="20230914 10:51:33.884" level="INFO">Clicking button 'xpath://input[@name='submit']'.</msg>
+<status status="PASS" starttime="20230914 10:51:33.884" endtime="20230914 10:51:35.521"/>
 </kw>
-<status status="PASS" starttime="20230905 17:34:26.349" endtime="20230905 17:34:28.261"/>
+<status status="PASS" starttime="20230914 10:51:33.616" endtime="20230914 10:51:35.521"/>
 </kw>
 <kw name="Close Browser URL" library="common_keywords">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230905 17:34:28.261" endtime="20230905 17:34:30.424"/>
+<status status="PASS" starttime="20230914 10:51:35.522" endtime="20230914 10:51:37.817"/>
 </kw>
-<status status="PASS" starttime="20230905 17:34:28.261" endtime="20230905 17:34:30.425"/>
+<status status="PASS" starttime="20230914 10:51:35.521" endtime="20230914 10:51:37.817"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Login Successfully !!!!!!!</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230905 17:34:30.425" endtime="20230905 17:34:30.425"/>
+<status status="PASS" starttime="20230914 10:51:37.818" endtime="20230914 10:51:37.818"/>
 </kw>
-<status status="PASS" starttime="20230905 17:34:18.809" endtime="20230905 17:34:30.425"/>
+<status status="PASS" starttime="20230914 10:51:24.484" endtime="20230914 10:51:37.818"/>
 </branch>
 <branch type="EXCEPT">
 <kw name="Log To Console" library="BuiltIn">
 <arg>Login Fail.......</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20230905 17:34:30.426" endtime="20230905 17:34:30.426"/>
+<status status="NOT RUN" starttime="20230914 10:51:37.818" endtime="20230914 10:51:37.818"/>
 </kw>
-<status status="NOT RUN" starttime="20230905 17:34:30.426" endtime="20230905 17:34:30.426"/>
+<status status="NOT RUN" starttime="20230914 10:51:37.818" endtime="20230914 10:51:37.818"/>
 </branch>
-<status status="PASS" starttime="20230905 17:34:18.809" endtime="20230905 17:34:30.426"/>
+<status status="PASS" starttime="20230914 10:51:24.484" endtime="20230914 10:51:37.818"/>
 </try>
-<status status="PASS" starttime="20230905 17:34:18.809" endtime="20230905 17:34:30.426"/>
+<status status="PASS" starttime="20230914 10:51:24.484" endtime="20230914 10:51:37.818"/>
 </test>
-<status status="PASS" starttime="20230905 17:34:18.593" endtime="20230905 17:34:30.426"/>
+<status status="PASS" starttime="20230914 10:51:24.094" endtime="20230914 10:51:37.818"/>
 </suite>
 <statistics>
 <total>

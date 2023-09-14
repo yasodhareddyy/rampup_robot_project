@@ -21,3 +21,4 @@ Open HR-OS Portal and Login
     Create A Time Sheet For A Week On Weekly Basis
     #Update Or Edit Newly Created Time Sheet
     Delete Newly Created Time Sheet
+    Close Browser URL
