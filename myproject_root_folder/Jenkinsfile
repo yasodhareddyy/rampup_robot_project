@@ -10,26 +10,26 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // First, navigate to the directory for module 1 tests
-                dir('C:\\Users\\YasodhaS-3242\\PycharmProjects\\PythonProject\\Robot_Frame_work\\rampup_task_robot\\myproject_root_folder\\frame_work\\test_cycles\\module_1') {
-                    // Run Robot Framework tests for reg module 1
-                    bat 'robot reg_testcase1.robot'
-                }
-                // Then, navigate to the directory for module 1 tests
-                dir('C:\\Users\\YasodhaS-3242\\PycharmProjects\\PythonProject\\Robot_Frame_work\\rampup_task_robot\\myproject_root_folder\\frame_work\\test_cycles\\module_1') {
-                    // Run Robot Framework tests for login module 1
-                    bat 'robot login_testcase1.robot'
-                }
-                // Navigate to the directory for module 2 tests
-                dir('C:\\Users\\YasodhaS-3242\\PycharmProjects\\PythonProject\\Robot_Frame_work\\rampup_task_robot\\myproject_root_folder\\frame_work\\test_cycles\\module_2') {
-                    // Run Robot Framework tests for reg module 2
-                    bat 'robot reg_testcase2.robot'
-                }
-                // Then, navigate to the directory for module 2 tests
-                dir('C:\\Users\\YasodhaS-3242\\PycharmProjects\\PythonProject\\Robot_Frame_work\\rampup_task_robot\\myproject_root_folder\\frame_work\\test_cycles\\module_2') {
-                    // Run Robot Framework tests for login module 2
-                    bat 'robot login_testcase2.robot'
-
-                }
+//                 dir('C:\\Users\\YasodhaS-3242\\PycharmProjects\\PythonProject\\Robot_Frame_work\\rampup_task_robot\\myproject_root_folder\\frame_work\\test_cycles\\module_1') {
+//                     // Run Robot Framework tests for reg module 1
+//                     bat 'robot reg_testcase1.robot'
+//                 }
+//                 // Then, navigate to the directory for module 1 tests
+//                 dir('C:\\Users\\YasodhaS-3242\\PycharmProjects\\PythonProject\\Robot_Frame_work\\rampup_task_robot\\myproject_root_folder\\frame_work\\test_cycles\\module_1') {
+//                     // Run Robot Framework tests for login module 1
+//                     bat 'robot login_testcase1.robot'
+//                 }
+//                 // Navigate to the directory for module 2 tests
+//                 dir('C:\\Users\\YasodhaS-3242\\PycharmProjects\\PythonProject\\Robot_Frame_work\\rampup_task_robot\\myproject_root_folder\\frame_work\\test_cycles\\module_2') {
+//                     // Run Robot Framework tests for reg module 2
+//                     bat 'robot reg_testcase2.robot'
+//                 }
+//                 // Then, navigate to the directory for module 2 tests
+//                 dir('C:\\Users\\YasodhaS-3242\\PycharmProjects\\PythonProject\\Robot_Frame_work\\rampup_task_robot\\myproject_root_folder\\frame_work\\test_cycles\\module_2') {
+//                     // Run Robot Framework tests for login module 2
+//                     bat 'robot login_testcase2.robot'
+//
+//                 }
                 dir('C:\\Users\\YasodhaS-3242\\PycharmProjects\\PythonProject\\Robot_Frame_work\\rampup_task_robot\\myproject_root_folder\\frame_work\\test_cycles\\hr_os_module_3') {
                     // Run Robot Framework tests for login module 2
                     bat 'login_hr_os_testcase.robot'
