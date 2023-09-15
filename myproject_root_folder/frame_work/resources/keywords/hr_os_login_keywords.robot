@@ -215,33 +215,29 @@ Update Or Edit Newly Created Time Sheet
     Click Element       ${xapth_TimeSheet}
     Sleep    20
     FOR    ${day}    IN RANGE    1    8    # Loop from day 1 to day 7 (inclusive)
-        ${element_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${xpath_editTimeSheetDetails}
-        Sleep    20
+        Sleep    5
+#        ${edite_ele}=   Get Webelements     ${xpath_editTimeSheetDetails}
+#        ${num_elements}    Get Length    ${edite_ele}
+#        Log To Console    ${num_elements}
 
-        IF      ${element_visible}    # If element is visible
-            Wait Until Element Is Visible   ${xpath_editTimeSheetDetails}
-            Click Element    ${xpath_editTimeSheetDetails}
-            Sleep    10
+
+        IF  '${num_elements}'>='1'
+            FOR  ${element}   IN   @{edite_ele}
+                 Run Keyword And Ignore Error    Click Element    ${element}
+                 sleep  3s
+            END
             Clear Element Text      ${id_xpath_updateDescription}
             Input Text    ${id_xpath_updateDescription}    ${update_desciptionTimeSheet}
             Click Element    ${xpath_UpdateTimeSheet}
-            Sleep    30
+            sleep  3s
             Click Element    ${xpath_ForwordDate}
-            Sleep    6
-
         ELSE
+
+            sleep  3s
             Click Element    ${xpath_ForwordDate}
-            Sleep    6
         END
 
-        ${day}=    Evaluate    ${day} + 1
-        # Optionally, you can add logic to break the loop if needed
-        # Example: If you want to break after 7 days
-        Run Keyword If    ${day} > 7    Exit For Loop
     END
-
-    Log To Console    Update Or Edit Newly Created Time Sheet successful !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 
 Delete newly created time sheet
     Wait Until Element Is Visible    ${xapth_TimeSheet}

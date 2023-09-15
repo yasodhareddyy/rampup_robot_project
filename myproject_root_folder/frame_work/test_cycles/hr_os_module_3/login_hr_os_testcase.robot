@@ -11,8 +11,8 @@ Open HR-OS Portal and Login
     Open New Window Sign In - Google Accounts Aswell Login Information
     Open New Window HR-OS Home Page
 
-    Top Menu Of HR-OS Home Page
-    Left menu of HR-OS Home Page
+#    Top Menu Of HR-OS Home Page
+#    Left menu of HR-OS Home Page
 
     Create A Time Sheet For A Week On Dialy Basis
     Update Or Edit Newly Created Time Sheet

@@ -95,7 +95,9 @@ ${xpath_OnSixthDay}       xpath:(//td[@class="ant-picker-cell ant-picker-cell-in
 
 #Update newly created time sheet. (Do for 4.1 & 4.2)
 ${xpath_ForwordDate}        xpath://img[@src='/static/ic_arrow_right_gray.aaf9b4aa.svg']
-${xpath_editTimeSheetDetails}       xpath:(//img[@src='/static/ic_edit.8cd75d9f.svg'])[1]        #//img[@src='/static/ic_edit.8cd75d9f.svg']
+${xpath_editTimeSheetDetails}       xpath://img[@src='/static/ic_edit.8cd75d9f.svg']       #//img[@src='/static/ic_edit.8cd75d9f.svg']
+${xpath_editTimeSheetDetails_2}       xpath:(//img[@src='/static/ic_edit.8cd75d9f.svg'])[2]        #//img[@src='/static/ic_edit.8cd75d9f.svg']
+${xpath_editTimeSheetDetails_3}       xpath:(//img[@src='/static/ic_edit.8cd75d9f.svg'])[3]        #//img[@src='/static/ic_edit.8cd75d9f.svg']
 ${id_xpath_updateDescription}       id:basic_notes
 ${xpath_UpdateTimeSheet}        xpath://div[text()='Update']
 
